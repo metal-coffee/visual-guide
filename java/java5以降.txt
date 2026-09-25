@@ -1,0 +1,68 @@
+学習順序としてはこうするのがおすすめです
+第1段階：Java 5～7
+Generics、enum、拡張for、diamond、try-with-resources。
+ここは比較的簡単です。
+第2段階：Java 8
+ここを重点的にやります。
+
+Lambda
+  ↓
+Functional Interface
+  ↓
+Predicate / Function / Consumer / Supplier
+  ↓
+Stream
+  ↓
+Optional
+  ↓
+メソッド参照
+
+
+Java 8を理解すると、Springの現在のコードがかなり読みやすくなります。
+第3段階：Java 9～17
+主に、
+
+var
+switch式
+text block
+record
+instanceof pattern matching
+sealed class
+
+
+
+です。
+第4段階：Java 21世代
+主に、
+
+switch pattern matching
+record pattern
+virtual thread
+
+です。
+Virtual Threadは「文法」というより並行処理機能ですが、現在のJavaを理解するなら重要です。
+
+
+
+① コレクションの書き方
+② nullの扱い
+③ 条件分岐
+④ オブジェクト定義
+⑤ 関数を引数として渡す
+⑥ Streamでデータ加工
+⑦ 例外・リソース管理
+⑧ 並行処理
+
+
+という用途別に覚えた方が実務向けです。
+私なら、Java 5あたりからのキャッチアップ用に次の 8章構成 にします。
+1. Generics・拡張for・enum
+2. try-with-resources・diamond
+3. LambdaとFunctional Interface
+4. Stream API
+5. Optional
+6. var・switch式・text block
+7. record・pattern matching・sealed
+8. 現代Javaの実務コードを読む練習
+この順番なら、Spring Bootのコードを読む能力にも直接つながります。
+特に Lambda / Stream / Optional / record / pattern matching の5つを重点的にやれば、Java 5世代からでもかなり追いつけます。
